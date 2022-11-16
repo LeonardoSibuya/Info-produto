@@ -8,9 +8,13 @@
  Desktop: 992px até 1200px
 
  Grandes telas: acima de 1200px
+
 */
 
 @charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -20,22 +24,32 @@
 
 body {
     max-width: 768px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
 }
 
 header{
-    background-color: #83e0ffcb;
+    background-image: linear-gradient(to top, #44b6d8, #a8ebff);
 
     margin: auto;
     margin-bottom: 15px;
     padding: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 5.41px;
 }
 
 header h1 {
     text-align: left;
+    font-family: 'Righteous', cursive;
+    color: #000000;
+    text-shadow: 0px 0px 1px #000000b5;
+
 
     margin: auto;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 nav {
@@ -45,16 +59,18 @@ nav {
 nav ul {
     display: flex;
 
-    margin: 15px 5px 0px 15px;
+    margin: 25px 5px 0px 15px;
 
     justify-content: right;
 }
 
 li a {
     text-decoration: none;
-
-    color: #d3d3d3;
-    background-color: #0000ff;
+    color: #cfeff9;
+    background-color: #2F4858;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 15px;
+    font-weight: bolder;
 
     padding: 4px;
     margin-left: 15px;
@@ -62,14 +78,18 @@ li a {
 
 main {
     margin: auto;
-    min-width: 100%;
 }
 
 main h2 {
     text-align: center;
-    margin: 15px;
+    font-size: 1.6em;
+    font-weight: bolder;
 
-    background-color: lightgray;
+    margin: 15px;
+    padding: 12px;
+
+    color: #cfeff9;
+    background-color: #2F4858;
 }
 
 .products {
@@ -94,11 +114,12 @@ main h2 {
 .products h3 {
     margin: 15px 10px 5px 10px; 
     padding: 7px;
-    max-width: 110px;
 
     text-align: center;
 
-    background-color: lightgray;
+    color: #cfeff9;
+    background-color: #2F4858;
+    font-weight: 100;
 }
 
 .products img {
@@ -110,11 +131,13 @@ main h2 {
 }
 
 footer {
-    background-color: #83e0ffcb;
+    background-color: #44b6d8;
     
     margin: auto;
     margin-bottom: 0;
     padding: 15px;
+    width: 100%;
+    
 
     display: flex;
     justify-content: space-between;
@@ -122,132 +145,4 @@ footer {
 
 .contact, .ecommerce {
     display: inline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Telefones em paisagem e abaixo */
-
-@media screen and (max-width: 480px) { 
-    @charset 'UTF-8';
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    background-color: #83e0ffcb;
-
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 15px;
-    padding-bottom: 8px;
-}
-
-header h1 {
-    text-align: left;
-
-    margin: auto;
-    margin-bottom: 8px;
-}
-
-nav {
-    display: inline;
-}
-
-nav ul {
-    display: flex;
-
-    margin: 15px 5px 0px 15px;
-
-    justify-content: right;
-}
-
-li a {
-    text-decoration: none;
-
-    color: #d3d3d3;
-    background-color: #0000ff;
-
-    padding: 4px;
-    margin-left: 15px;
-}
-
-main {
-    margin: auto;
-    min-width: 100%;
-}
-
-main h2 {
-    text-align: center;
-    margin: 15px;
-
-    background-color: lightgray;
-}
-
-.products {
-    display: flex;
-    margin: auto;
-    margin-bottom: 10px;
-    
-
-    max-width: 350px;
-
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.itens {
-    margin: 10px 0px;
-
-    width: 140px;
-}
-
-.products h3 {
-    margin: 15px 10px 5px 10px; 
-    padding: 7px;
-    max-width: 110px;
-
-    text-align: center;
-
-    background-color: lightgray;
-}
-
-.products img {
-    display: flex;
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-footer {
-    background-color: #83e0ffcb;
-    
-    margin: auto;
-    margin-bottom: 0;
-    padding: 15px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact, .ecommerce {
-    display: inline;
-}
-
 }
