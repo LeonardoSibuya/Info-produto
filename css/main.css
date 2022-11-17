@@ -164,7 +164,7 @@ footer {
     text-decoration: none;
     color: #ffffff;
     font-style: italic;
-    padding-left: 5px;
+    padding-left: 1px;
 }
 
 a .material-symbols-outlined,
@@ -176,12 +176,11 @@ a .material-symbols-outlined,
     font-weight: 700;
     
     margin: auto;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 ul li img {
     height: 45px;
     width: 65px;
-    margin-left: 70px;
     padding-bottom: 5px;
 }
