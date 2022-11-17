@@ -33,7 +33,7 @@ html, body {
 }
 
 header{
-    background-image: linear-gradient(to top, #2e6a41, #9effbbac);
+    background-image: linear-gradient(to top, #276139, #0dd649ac);
     box-shadow: 0px 1px 1px #000000b5;
 
     margin: auto;
@@ -67,7 +67,7 @@ nav ul {
 
 li a {
     text-decoration: none;
-    color: #cfeff9;
+    color: #ffffff;
     background-color: #18422E;
     box-shadow: 0px 1px 1px #000000b5;
     border-radius: 6px 6px 0px 0px;
@@ -90,7 +90,7 @@ main h2 {
     margin: 15px;
     padding: 12px;
 
-    color: #cfeff9;
+    color: #ffffff;
     background-color: #18422E;
     box-shadow: 0px 1px 1px #000000b5;
     border-radius: 3px;
@@ -121,7 +121,7 @@ main h2 {
 
     text-align: center;
 
-    color: #cfeff9;
+    color: #ffffff;
     background-color: #18422E;
     font-weight: 100;
     box-shadow: 0px 1px 1px #000000b5;
@@ -138,11 +138,11 @@ main h2 {
 }
 
 footer {
-    background-image: linear-gradient(to top, #2e6a41, #9effbbac);
+    background-image: linear-gradient(to top, #18422E, #18422E);
     
     margin: auto;
-    margin-bottom: 0;
-    padding: 15px;
+    
+    padding: 30px;
     width: 100%;
     
 
@@ -152,4 +152,36 @@ footer {
 
 .contact, .ecommerce {
     display: inline;
+    color: white;
+}
+
+.contact p{
+    padding-bottom: 10px;
+}
+
+.contact a,
+.ecommerce a{
+    text-decoration: none;
+    color: #ffffff;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+a .material-symbols-outlined,
+.ecommerce .material-symbols-outlined {
+    font-size: 20px;
+    
+    display: inline;
+    
+    font-weight: 700;
+    
+    margin: auto;
+    padding-left: 5px;
+}
+
+ul li img {
+    height: 45px;
+    width: 65px;
+    margin-left: 70px;
+    padding-bottom: 5px;
 }
