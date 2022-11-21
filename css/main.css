@@ -43,8 +43,8 @@ header{
 }
 
 header img {
-    height: 80px;
-    width: 120px;
+    max-height: 50px;
+    max-width: 100px;
     margin: 5px 10px;
 }
 
