@@ -26,6 +26,9 @@ body {
 
     font-family: 'Roboto', sans-serif;
     text-shadow: 0px 1px 1px #000000b5;
+    background-color: #D3D6CB;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 html, body {
